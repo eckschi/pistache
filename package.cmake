@@ -43,14 +43,14 @@ list(
 set(CPACK_RESOURCE_FILE_LICENSE ${CMAKE_SOURCE_DIR}/LICENSE)
 set(CPACK_RESOURCE_FILE_README ${CMAKE_SOURCE_DIR}/README.md)
 
-set(CPACK_PACKAGING_INSTALL_PREFIX "/usr/local")
+#set(CPACK_PACKAGING_INSTALL_PREFIX "/usr/local")
 set(CPACK_RPM_EXCLUDE_FROM_AUTO_FILELIST_ADDITION
-    "/usr/local"
-    "/usr/local/include"
-    "/usr/local/include/${PROJECT_NAME}"
-    "/usr/local/lib64"
-    "/usr/local/share"
-    "/usr/local/share/${PROJECT_NAME}")
+    "/usr/"
+    "/usr/include"
+    "/usr/include/${PROJECT_NAME}"
+    "/usr/lib64"
+    "/usr/share"
+    "/usr/share/${PROJECT_NAME}")
 
 install(FILES ${PUBLIC_INCLUDES} DESTINATION include/pistache)
 
